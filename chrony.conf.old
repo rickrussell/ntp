@@ -1,0 +1,18 @@
+# See ntpd.conf(5) and /etc/examples/ntpd.conf
+
+driftfile /var/lib/chrony/drift
+local stratum 8
+manual
+allow 192.168.25
+allow 192.168.28
+server 129.6.15.28 iburst
+bindaddress 192.168.25.7
+bindcmdaddress 0.0.0.0
+logdir /var/log/chrony
+#server time.nist.gov iburst
+pool time.nist.gov iburst
+#pool pool.ntp.org iburst
+#maxupdateskew 10
+#makestep 1 -1
+#hwclockfile /etc/localtime
+#rtcsync

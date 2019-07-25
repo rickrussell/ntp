@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  ntp:
+    build: .
+    image: rickrussell/docker-ntp:latest
+    container_name: ntp
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 10.66.6.6:123:123/udp
+      - 10.66.6.6:323:323/udp
+      - 10.66.6.6:123:123
+      - 10.66.6.8:8080:8080/tcp
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+      - SYS_TIME
