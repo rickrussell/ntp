@@ -7,9 +7,9 @@ Using the docker-compose.yml file included in this git repo, you can build the c
 
 ```
 # clone, run
-$ git clone https://LMUD@dev.azure.com/LMUD/IaC/_git/IaC
+$ git clone https://github.com/rickrussell/ntp
 
-$ cd IaC/ntp
+$ cd ntp
 $ docker-compose up -d 
 ```
 
@@ -43,7 +43,7 @@ docker host:
 
 ### Connect to Server for Troubleshooting
 ```
-$> cd /projects/IaC/ntp
+$> cd ntp
 projects/IaC/ntp $> docker-compose ps 
 projects/IaC/ntp $> docker-compose ps
 Name              Command               State                      Ports
