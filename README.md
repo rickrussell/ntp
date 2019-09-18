@@ -43,7 +43,6 @@ docker host:
 
 ### Connect to Server for Troubleshooting
 ```
-$> ssh hekate
 $> cd /projects/IaC/ntp
 projects/IaC/ntp $> docker-compose ps 
 projects/IaC/ntp $> docker-compose ps
