@@ -30,7 +30,7 @@ server <IP of Docker Host>, stratum 1, offset 0.010089, delay 0.02585
 17 Sep 15:20:52 ntpdate[14186]: adjust time server <IP of Docker Host> offset 0.010089 sec
 ```
 
-If you see a message, like the following, it's likely the clock is not yet synchronized.
+If you see a message, like the following, it's likely the clock is not yet synchronized, or, perhaps you don't have the ntp ports forwarded
 ```
 $> ntpdate -q <IP of Docker Host>
 server <IP of Docker Host>, stratum 1, offset 0.005689, delay 0.02837
