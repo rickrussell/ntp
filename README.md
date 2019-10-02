@@ -105,4 +105,4 @@ $> docker-compose exec ntp chronyc makestep
 Links: 
 [chronyc (chrony cli)](https://chrony.tuxfamily.org/doc/3.5/chronyc.html "chronyc (chrony CLI)") 
 [chronyd (chrony daemon)](https://chrony.tuxfamily.org/doc/3.5/chronyd.html "chronyd (chrony daemon)") 
-[chrony.conf)](https://chrony.tuxfamily.org/doc/3.5/chrony.conf.html "chrony.conf)")
+[chrony.conf](https://chrony.tuxfamily.org/doc/3.5/chrony.conf.html "chrony.conf)")
